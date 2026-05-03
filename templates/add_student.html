@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-light">
+<div class="container mt-4">
+    <h3>Add New Student</h3>
+    <form method="POST" enctype="multipart/form-data" class="p-4 bg-white shadow rounded w-50 mx-auto">
+        <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Student Name" required>
+        </div>
+        <div class="mb-3">
+            <select name="gender" class="form-select" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input type="number" name="subject1" class="form-control" placeholder="Subject 1 Marks" required>
+        </div>
+        <div class="mb-3">
+            <input type="number" name="subject2" class="form-control" placeholder="Subject 2 Marks" required>
+        </div>
+        <div class="mb-3">
+            <input type="number" name="subject3" class="form-control" placeholder="Subject 3 Marks" required>
+        </div>
+        <div class="mb-3">
+            <input type="file" name="photo" class="form-control">
+        </div>
+        <button class="btn btn-success w-100">Submit</button>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary w-100 mt-2">Back</a>
+    </form>
+</div>
+</body>
+</html>
