@@ -81,7 +81,7 @@ http://127.0.0.1:5000
 
 ## 📸 Screenshots
 
-(Add screenshots of your application here)
+<img src="images/main-page.png" width="600">
 
 ---
 
@@ -91,7 +91,4 @@ The goal of this project is to demonstrate the development of a simple web appli
 
 ---
 
-## 📌 Author
-
-Sabina Sadreeva
 
